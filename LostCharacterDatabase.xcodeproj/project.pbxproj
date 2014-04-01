@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADB21ECC18EB44670013A822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21ECB18EB44670013A822 /* Foundation.framework */; };
+		ADB21ECE18EB44670013A822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21ECD18EB44670013A822 /* CoreGraphics.framework */; };
+		ADB21ED018EB44670013A822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21ECF18EB44670013A822 /* UIKit.framework */; };
+		ADB21ED218EB44670013A822 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21ED118EB44670013A822 /* CoreData.framework */; };
+		ADB21ED818EB44680013A822 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADB21ED618EB44680013A822 /* InfoPlist.strings */; };
+		ADB21EDA18EB44680013A822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21ED918EB44680013A822 /* main.m */; };
+		ADB21EDE18EB44680013A822 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21EDD18EB44680013A822 /* AppDelegate.m */; };
+		ADB21EE118EB44680013A822 /* LostCharacterDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADB21EDF18EB44680013A822 /* LostCharacterDatabase.xcdatamodeld */; };
+		ADB21EE318EB44680013A822 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB21EE218EB44680013A822 /* Images.xcassets */; };
+		ADB21EEA18EB44680013A822 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21EE918EB44680013A822 /* XCTest.framework */; };
+		ADB21EEB18EB44680013A822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21ECB18EB44670013A822 /* Foundation.framework */; };
+		ADB21EEC18EB44680013A822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21ECF18EB44670013A822 /* UIKit.framework */; };
+		ADB21EED18EB44680013A822 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB21ED118EB44670013A822 /* CoreData.framework */; };
+		ADB21EF518EB44680013A822 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADB21EF318EB44680013A822 /* InfoPlist.strings */; };
+		ADB21EF718EB44680013A822 /* LostCharacterDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21EF618EB44680013A822 /* LostCharacterDatabaseTests.m */; };
+		ADB21F0118EB45860013A822 /* lost.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB21F0018EB45860013A822 /* lost.plist */; };
+		ADB21F0318EB46060013A822 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB21F0218EB46060013A822 /* Storyboard.storyboard */; };
+		ADB21F0618EB46670013A822 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F0518EB46670013A822 /* RootViewController.m */; };
+		ADB21F0C18EB5DF70013A822 /* CharacterList.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F0B18EB5DF70013A822 /* CharacterList.m */; };
+		ADB21F0F18EB5F640013A822 /* CharacterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F0E18EB5F640013A822 /* CharacterTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADB21EEE18EB44680013A822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADB21EC018EB44670013A822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB21EC718EB44670013A822;
+			remoteInfo = LostCharacterDatabase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADB21EC818EB44670013A822 /* LostCharacterDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostCharacterDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB21ECB18EB44670013A822 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ADB21ECD18EB44670013A822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ADB21ECF18EB44670013A822 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ADB21ED118EB44670013A822 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ADB21ED518EB44680013A822 /* LostCharacterDatabase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LostCharacterDatabase-Info.plist"; sourceTree = "<group>"; };
+		ADB21ED718EB44680013A822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADB21ED918EB44680013A822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADB21EDB18EB44680013A822 /* LostCharacterDatabase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LostCharacterDatabase-Prefix.pch"; sourceTree = "<group>"; };
+		ADB21EDC18EB44680013A822 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADB21EDD18EB44680013A822 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADB21EE018EB44680013A822 /* LostCharacterDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LostCharacterDatabase.xcdatamodel; sourceTree = "<group>"; };
+		ADB21EE218EB44680013A822 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ADB21EE818EB44680013A822 /* LostCharacterDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostCharacterDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB21EE918EB44680013A822 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ADB21EF218EB44680013A822 /* LostCharacterDatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LostCharacterDatabaseTests-Info.plist"; sourceTree = "<group>"; };
+		ADB21EF418EB44680013A822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADB21EF618EB44680013A822 /* LostCharacterDatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostCharacterDatabaseTests.m; sourceTree = "<group>"; };
+		ADB21F0018EB45860013A822 /* lost.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lost.plist; sourceTree = "<group>"; };
+		ADB21F0218EB46060013A822 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		ADB21F0418EB46670013A822 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		ADB21F0518EB46670013A822 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		ADB21F0A18EB5DF70013A822 /* CharacterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterList.h; sourceTree = "<group>"; };
+		ADB21F0B18EB5DF70013A822 /* CharacterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterList.m; sourceTree = "<group>"; };
+		ADB21F0D18EB5F640013A822 /* CharacterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewCell.h; sourceTree = "<group>"; };
+		ADB21F0E18EB5F640013A822 /* CharacterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADB21EC518EB44670013A822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB21ECE18EB44670013A822 /* CoreGraphics.framework in Frameworks */,
+				ADB21ED218EB44670013A822 /* CoreData.framework in Frameworks */,
+				ADB21ED018EB44670013A822 /* UIKit.framework in Frameworks */,
+				ADB21ECC18EB44670013A822 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB21EE518EB44680013A822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB21EEA18EB44680013A822 /* XCTest.framework in Frameworks */,
+				ADB21EED18EB44680013A822 /* CoreData.framework in Frameworks */,
+				ADB21EEC18EB44680013A822 /* UIKit.framework in Frameworks */,
+				ADB21EEB18EB44680013A822 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADB21EBF18EB44670013A822 = {
+			isa = PBXGroup;
+			children = (
+				ADB21ED318EB44670013A822 /* LostCharacterDatabase */,
+				ADB21EF018EB44680013A822 /* LostCharacterDatabaseTests */,
+				ADB21ECA18EB44670013A822 /* Frameworks */,
+				ADB21EC918EB44670013A822 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADB21EC918EB44670013A822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADB21EC818EB44670013A822 /* LostCharacterDatabase.app */,
+				ADB21EE818EB44680013A822 /* LostCharacterDatabaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADB21ECA18EB44670013A822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADB21ECB18EB44670013A822 /* Foundation.framework */,
+				ADB21ECD18EB44670013A822 /* CoreGraphics.framework */,
+				ADB21ECF18EB44670013A822 /* UIKit.framework */,
+				ADB21ED118EB44670013A822 /* CoreData.framework */,
+				ADB21EE918EB44680013A822 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADB21ED318EB44670013A822 /* LostCharacterDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				ADB21F0218EB46060013A822 /* Storyboard.storyboard */,
+				ADB21F0D18EB5F640013A822 /* CharacterTableViewCell.h */,
+				ADB21F0E18EB5F640013A822 /* CharacterTableViewCell.m */,
+				ADB21EDC18EB44680013A822 /* AppDelegate.h */,
+				ADB21EDD18EB44680013A822 /* AppDelegate.m */,
+				ADB21EE218EB44680013A822 /* Images.xcassets */,
+				ADB21F0418EB46670013A822 /* RootViewController.h */,
+				ADB21F0518EB46670013A822 /* RootViewController.m */,
+				ADB21EDF18EB44680013A822 /* LostCharacterDatabase.xcdatamodeld */,
+				ADB21F0A18EB5DF70013A822 /* CharacterList.h */,
+				ADB21F0B18EB5DF70013A822 /* CharacterList.m */,
+				ADB21F0018EB45860013A822 /* lost.plist */,
+				ADB21ED418EB44680013A822 /* Supporting Files */,
+			);
+			path = LostCharacterDatabase;
+			sourceTree = "<group>";
+		};
+		ADB21ED418EB44680013A822 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADB21ED518EB44680013A822 /* LostCharacterDatabase-Info.plist */,
+				ADB21ED618EB44680013A822 /* InfoPlist.strings */,
+				ADB21ED918EB44680013A822 /* main.m */,
+				ADB21EDB18EB44680013A822 /* LostCharacterDatabase-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADB21EF018EB44680013A822 /* LostCharacterDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADB21EF618EB44680013A822 /* LostCharacterDatabaseTests.m */,
+				ADB21EF118EB44680013A822 /* Supporting Files */,
+			);
+			path = LostCharacterDatabaseTests;
+			sourceTree = "<group>";
+		};
+		ADB21EF118EB44680013A822 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADB21EF218EB44680013A822 /* LostCharacterDatabaseTests-Info.plist */,
+				ADB21EF318EB44680013A822 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADB21EC718EB44670013A822 /* LostCharacterDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB21EFA18EB44680013A822 /* Build configuration list for PBXNativeTarget "LostCharacterDatabase" */;
+			buildPhases = (
+				ADB21EC418EB44670013A822 /* Sources */,
+				ADB21EC518EB44670013A822 /* Frameworks */,
+				ADB21EC618EB44670013A822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LostCharacterDatabase;
+			productName = LostCharacterDatabase;
+			productReference = ADB21EC818EB44670013A822 /* LostCharacterDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADB21EE718EB44680013A822 /* LostCharacterDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB21EFD18EB44680013A822 /* Build configuration list for PBXNativeTarget "LostCharacterDatabaseTests" */;
+			buildPhases = (
+				ADB21EE418EB44680013A822 /* Sources */,
+				ADB21EE518EB44680013A822 /* Frameworks */,
+				ADB21EE618EB44680013A822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADB21EEF18EB44680013A822 /* PBXTargetDependency */,
+			);
+			name = LostCharacterDatabaseTests;
+			productName = LostCharacterDatabaseTests;
+			productReference = ADB21EE818EB44680013A822 /* LostCharacterDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADB21EC018EB44670013A822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Calvin Hildreth";
+				TargetAttributes = {
+					ADB21EE718EB44680013A822 = {
+						TestTargetID = ADB21EC718EB44670013A822;
+					};
+				};
+			};
+			buildConfigurationList = ADB21EC318EB44670013A822 /* Build configuration list for PBXProject "LostCharacterDatabase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ADB21EBF18EB44670013A822;
+			productRefGroup = ADB21EC918EB44670013A822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADB21EC718EB44670013A822 /* LostCharacterDatabase */,
+				ADB21EE718EB44680013A822 /* LostCharacterDatabaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADB21EC618EB44670013A822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB21ED818EB44680013A822 /* InfoPlist.strings in Resources */,
+				ADB21F0318EB46060013A822 /* Storyboard.storyboard in Resources */,
+				ADB21EE318EB44680013A822 /* Images.xcassets in Resources */,
+				ADB21F0118EB45860013A822 /* lost.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB21EE618EB44680013A822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB21EF518EB44680013A822 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADB21EC418EB44670013A822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB21EDE18EB44680013A822 /* AppDelegate.m in Sources */,
+				ADB21F0F18EB5F640013A822 /* CharacterTableViewCell.m in Sources */,
+				ADB21EE118EB44680013A822 /* LostCharacterDatabase.xcdatamodeld in Sources */,
+				ADB21F0618EB46670013A822 /* RootViewController.m in Sources */,
+				ADB21EDA18EB44680013A822 /* main.m in Sources */,
+				ADB21F0C18EB5DF70013A822 /* CharacterList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB21EE418EB44680013A822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB21EF718EB44680013A822 /* LostCharacterDatabaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADB21EEF18EB44680013A822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADB21EC718EB44670013A822 /* LostCharacterDatabase */;
+			targetProxy = ADB21EEE18EB44680013A822 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADB21ED618EB44680013A822 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADB21ED718EB44680013A822 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ADB21EF318EB44680013A822 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADB21EF418EB44680013A822 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADB21EF818EB44680013A822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ADB21EF918EB44680013A822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADB21EFB18EB44680013A822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LostCharacterDatabase/LostCharacterDatabase-Prefix.pch";
+				INFOPLIST_FILE = "LostCharacterDatabase/LostCharacterDatabase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ADB21EFC18EB44680013A822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LostCharacterDatabase/LostCharacterDatabase-Prefix.pch";
+				INFOPLIST_FILE = "LostCharacterDatabase/LostCharacterDatabase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ADB21EFE18EB44680013A822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LostCharacterDatabase.app/LostCharacterDatabase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LostCharacterDatabase/LostCharacterDatabase-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LostCharacterDatabaseTests/LostCharacterDatabaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ADB21EFF18EB44680013A822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LostCharacterDatabase.app/LostCharacterDatabase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LostCharacterDatabase/LostCharacterDatabase-Prefix.pch";
+				INFOPLIST_FILE = "LostCharacterDatabaseTests/LostCharacterDatabaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADB21EC318EB44670013A822 /* Build configuration list for PBXProject "LostCharacterDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB21EF818EB44680013A822 /* Debug */,
+				ADB21EF918EB44680013A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB21EFA18EB44680013A822 /* Build configuration list for PBXNativeTarget "LostCharacterDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB21EFB18EB44680013A822 /* Debug */,
+				ADB21EFC18EB44680013A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADB21EFD18EB44680013A822 /* Build configuration list for PBXNativeTarget "LostCharacterDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB21EFE18EB44680013A822 /* Debug */,
+				ADB21EFF18EB44680013A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADB21EDF18EB44680013A822 /* LostCharacterDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADB21EE018EB44680013A822 /* LostCharacterDatabase.xcdatamodel */,
+			);
+			currentVersion = ADB21EE018EB44680013A822 /* LostCharacterDatabase.xcdatamodel */;
+			path = LostCharacterDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADB21EC018EB44670013A822 /* Project object */;
+}
