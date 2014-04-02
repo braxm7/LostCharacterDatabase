@@ -103,7 +103,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ff-3D-MZw">
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ff-3D-MZw" customClass="MarkForDeleteButton">
                                                     <rect key="frame" x="156" y="7" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="X">
@@ -124,7 +124,6 @@
                                         <connections>
                                             <outlet property="dateOfDeathLabel" destination="wd6-06-nag" id="Xs8-Cd-4FU"/>
                                             <outlet property="myDeleteOnEditModeButton" destination="3Ff-3D-MZw" id="9Up-Fu-Ldw"/>
-                                            <outlet property="returnCellOfButtonPressed" destination="3Ff-3D-MZw" id="QMd-bC-FbL"/>
                                             <segue destination="jzp-Ic-kEd" kind="push" identifier="detailViewSegue" id="Rvv-Tf-03T"/>
                                         </connections>
                                     </tableViewCell>

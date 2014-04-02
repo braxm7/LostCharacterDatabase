@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MarkForDeleteButton.h"
 
 @interface CharacterTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *dateOfDeathLabel;
-@property (strong, nonatomic) IBOutlet UIButton *myDeleteOnEditModeButton;
-@property (strong, nonatomic) IBOutlet UIButton *returnCellOfButtonPressed;
-
+@property (strong, nonatomic) IBOutlet MarkForDeleteButton *myDeleteOnEditModeButton;
 @end

@@ -11,6 +11,7 @@
 #import "CharacterTableViewCell.h"
 #import "DetailViewController.h"
 #import "PickerViewController.h"
+#import "MarkForDeleteButton.h"
 
 @interface RootViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -35,6 +36,7 @@
     [super viewDidLoad];
     self.sortKey = @"actor";
     self.isEditModeEnabled = NO;
+    self.markedForDeletionArray = [NSMutableArray new];
     [self load];
 }
 
@@ -78,6 +80,7 @@
         cell.myDeleteOnEditModeButton.hidden = YES;
         cell.myDeleteOnEditModeButton.enabled = NO;
     }
+    cell.myDeleteOnEditModeButton.indexPath = indexPath;
     cell.dateOfDeathLabel.text = [self.lostCharactersArray[indexPath.row] dateOfDeath];
     
     return cell;
@@ -158,6 +161,13 @@
     else
     {
         [sender setTitle:@"Edit" forState:UIControlStateNormal];
+        for (NSIndexPath *indexPath in self.markedForDeletionArray)
+        {
+            [self.managedObjectContext deleteObject:self.lostCharactersArray[indexPath.row]];
+        }
+        [self.managedObjectContext save:nil];
+        [self load];
+        [self.myTableView reloadData];
     }
     [self.myTableView reloadData];
 }
@@ -197,11 +207,10 @@
     [self load];
 }
 
-- (IBAction)onEditDeleteButtonPressed:(UIButton *)button
+- (IBAction)onEditDeleteButtonPressed:(MarkForDeleteButton *)button
 {
-    NSIndexPath *indexPath = [self.myTableView indexPathForRowAtPoint:button.center];
-    [self.markedForDeletionArray addObject:self.lostCharactersArray[indexPath.row]];
-    NSLog(@"%@", indexPath);
+    [self.markedForDeletionArray addObject:button.indexPath];
+    NSLog(@"%@", button.indexPath);
     NSLog(@"%@",self.markedForDeletionArray);
 }
 

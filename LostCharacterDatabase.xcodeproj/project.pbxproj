@@ -29,6 +29,7 @@
 		ADB21F1218EB75C20013A822 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F1118EB75C20013A822 /* DetailViewController.m */; };
 		ADB21F1518EB818C0013A822 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F1418EB818C0013A822 /* PickerViewController.m */; };
 		ADB21F1818EB9BF60013A822 /* CharacterList.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F1718EB9BF60013A822 /* CharacterList.m */; };
+		ADB21F1B18EBAF570013A822 /* MarkForDeleteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F1A18EBAF570013A822 /* MarkForDeleteButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		ADB21F1418EB818C0013A822 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		ADB21F1618EB9BF60013A822 /* CharacterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterList.h; sourceTree = "<group>"; };
 		ADB21F1718EB9BF60013A822 /* CharacterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterList.m; sourceTree = "<group>"; };
+		ADB21F1918EBAF570013A822 /* MarkForDeleteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkForDeleteButton.h; sourceTree = "<group>"; };
+		ADB21F1A18EBAF570013A822 /* MarkForDeleteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkForDeleteButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				ADB21F0218EB46060013A822 /* Storyboard.storyboard */,
 				ADB21F0D18EB5F640013A822 /* CharacterTableViewCell.h */,
 				ADB21F0E18EB5F640013A822 /* CharacterTableViewCell.m */,
+				ADB21F1918EBAF570013A822 /* MarkForDeleteButton.h */,
+				ADB21F1A18EBAF570013A822 /* MarkForDeleteButton.m */,
 				ADB21EDC18EB44680013A822 /* AppDelegate.h */,
 				ADB21EDD18EB44680013A822 /* AppDelegate.m */,
 				ADB21EE218EB44680013A822 /* Images.xcassets */,
@@ -289,6 +294,7 @@
 				ADB21EDA18EB44680013A822 /* main.m in Sources */,
 				ADB21F1518EB818C0013A822 /* PickerViewController.m in Sources */,
 				ADB21F1218EB75C20013A822 /* DetailViewController.m in Sources */,
+				ADB21F1B18EBAF570013A822 /* MarkForDeleteButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
