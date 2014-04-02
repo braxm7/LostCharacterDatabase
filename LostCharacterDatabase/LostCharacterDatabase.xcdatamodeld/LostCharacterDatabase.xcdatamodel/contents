@@ -3,9 +3,11 @@
     <entity name="CharacterList" representedClassName="CharacterList" syncable="YES">
         <attribute name="actor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dateOfDeath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="passenger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="planeSeat" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CharacterList" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="CharacterList" positionX="-54" positionY="-9" width="128" height="120"/>
     </elements>
 </model>

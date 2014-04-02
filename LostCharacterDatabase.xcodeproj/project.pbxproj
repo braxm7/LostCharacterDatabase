@@ -25,8 +25,10 @@
 		ADB21F0118EB45860013A822 /* lost.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB21F0018EB45860013A822 /* lost.plist */; };
 		ADB21F0318EB46060013A822 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB21F0218EB46060013A822 /* Storyboard.storyboard */; };
 		ADB21F0618EB46670013A822 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F0518EB46670013A822 /* RootViewController.m */; };
-		ADB21F0C18EB5DF70013A822 /* CharacterList.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F0B18EB5DF70013A822 /* CharacterList.m */; };
 		ADB21F0F18EB5F640013A822 /* CharacterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F0E18EB5F640013A822 /* CharacterTableViewCell.m */; };
+		ADB21F1218EB75C20013A822 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F1118EB75C20013A822 /* DetailViewController.m */; };
+		ADB21F1518EB818C0013A822 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F1418EB818C0013A822 /* PickerViewController.m */; };
+		ADB21F1818EB9BF60013A822 /* CharacterList.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB21F1718EB9BF60013A822 /* CharacterList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +64,14 @@
 		ADB21F0218EB46060013A822 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		ADB21F0418EB46670013A822 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		ADB21F0518EB46670013A822 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		ADB21F0A18EB5DF70013A822 /* CharacterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterList.h; sourceTree = "<group>"; };
-		ADB21F0B18EB5DF70013A822 /* CharacterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterList.m; sourceTree = "<group>"; };
 		ADB21F0D18EB5F640013A822 /* CharacterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewCell.h; sourceTree = "<group>"; };
 		ADB21F0E18EB5F640013A822 /* CharacterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewCell.m; sourceTree = "<group>"; };
+		ADB21F1018EB75C20013A822 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		ADB21F1118EB75C20013A822 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		ADB21F1318EB818C0013A822 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		ADB21F1418EB818C0013A822 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		ADB21F1618EB9BF60013A822 /* CharacterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterList.h; sourceTree = "<group>"; };
+		ADB21F1718EB9BF60013A822 /* CharacterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +142,14 @@
 				ADB21EE218EB44680013A822 /* Images.xcassets */,
 				ADB21F0418EB46670013A822 /* RootViewController.h */,
 				ADB21F0518EB46670013A822 /* RootViewController.m */,
+				ADB21F1018EB75C20013A822 /* DetailViewController.h */,
+				ADB21F1118EB75C20013A822 /* DetailViewController.m */,
+				ADB21F1318EB818C0013A822 /* PickerViewController.h */,
+				ADB21F1418EB818C0013A822 /* PickerViewController.m */,
 				ADB21EDF18EB44680013A822 /* LostCharacterDatabase.xcdatamodeld */,
-				ADB21F0A18EB5DF70013A822 /* CharacterList.h */,
-				ADB21F0B18EB5DF70013A822 /* CharacterList.m */,
 				ADB21F0018EB45860013A822 /* lost.plist */,
+				ADB21F1618EB9BF60013A822 /* CharacterList.h */,
+				ADB21F1718EB9BF60013A822 /* CharacterList.m */,
 				ADB21ED418EB44680013A822 /* Supporting Files */,
 			);
 			path = LostCharacterDatabase;
@@ -274,9 +284,11 @@
 				ADB21EDE18EB44680013A822 /* AppDelegate.m in Sources */,
 				ADB21F0F18EB5F640013A822 /* CharacterTableViewCell.m in Sources */,
 				ADB21EE118EB44680013A822 /* LostCharacterDatabase.xcdatamodeld in Sources */,
+				ADB21F1818EB9BF60013A822 /* CharacterList.m in Sources */,
 				ADB21F0618EB46670013A822 /* RootViewController.m in Sources */,
 				ADB21EDA18EB44680013A822 /* main.m in Sources */,
-				ADB21F0C18EB5DF70013A822 /* CharacterList.m in Sources */,
+				ADB21F1518EB818C0013A822 /* PickerViewController.m in Sources */,
+				ADB21F1218EB75C20013A822 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +485,7 @@
 				ADB21EFC18EB44680013A822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADB21EFD18EB44680013A822 /* Build configuration list for PBXNativeTarget "LostCharacterDatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +494,7 @@
 				ADB21EFF18EB44680013A822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

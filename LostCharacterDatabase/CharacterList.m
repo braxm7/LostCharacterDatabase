@@ -12,7 +12,9 @@
 @implementation CharacterList
 
 @dynamic actor;
-@dynamic passenger;
 @dynamic dateOfDeath;
+@dynamic passenger;
+@dynamic gender;
+@dynamic planeSeat;
 
 @end

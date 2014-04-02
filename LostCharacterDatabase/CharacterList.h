@@ -13,7 +13,9 @@
 @interface CharacterList : NSManagedObject
 
 @property (nonatomic, retain) NSString * actor;
-@property (nonatomic, retain) NSString * passenger;
 @property (nonatomic, retain) NSString * dateOfDeath;
+@property (nonatomic, retain) NSString * passenger;
+@property (nonatomic, retain) NSString * gender;
+@property (nonatomic, retain) NSString * planeSeat;
 
 @end

@@ -10,5 +10,7 @@
 
 @interface CharacterTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *dateOfDeathLabel;
+@property (strong, nonatomic) IBOutlet UIButton *myDeleteOnEditModeButton;
+@property (strong, nonatomic) IBOutlet UIButton *returnCellOfButtonPressed;
 
 @end
